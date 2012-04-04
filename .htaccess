@@ -1,0 +1,7 @@
+RewriteEngine on
+RewriteBase /home/undspa/
+#RewriteBase /undspa/
+
+RewriteCond $1 !^(index\.php|(.*)\.html|(.*)\.css|(.*)\.js|robots\.txt|(.*)\.jpg|(.*)\.png|(.*)\.gif)
+RewriteRule ^(.*)$ ./index.php/$1 [L]
+
